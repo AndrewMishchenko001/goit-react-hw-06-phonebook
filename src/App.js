@@ -1,14 +1,14 @@
-import Section from "./components/Section";
-import Form from "./components/Form";
-import ContactList from "./components/ContactList";
-import Filter from "./components/Filter";
-import s from "./components/Form/Form.module.css";
+import s from "./Components/ContactForm/ContactForm.module.css";
+import ContactList from "./Components/ContactList/ContactList";
+import Filter from "./Components/Filter/Filter";
+import ContactsForm from "./Components/ContactForm/ContactsForm";
+import Section from "./Components/Section.js/Section";
 
 export default function App() {
   return (
     <div className={s.container}>
       <Section title="Phonebook">
-        <Form />
+        <ContactsForm />
       </Section>
 
       <Section title="Contacts">
